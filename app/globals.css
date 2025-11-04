@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Create CSS classes for using the fonts */
+.font-sans {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-instrument-serif), serif;
+}
+#lamp1 {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  left: -100px;
+  top: -30px;
+  background: radial-gradient(
+    ellipse at center,
+    #fff8dc 0%,
+    #dddddd 25%,
+    #858585 45%,
+    #545454 55%,
+    #242424 75%,
+    #000000 100%
+  );
+  opacity: 0.7;
+  filter: blur(85px);
+}
+#lamp2 {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  right: -100px;
+  top: -30px;
+  background: radial-gradient(
+    ellipse at center,
+    #fff8dc 0%,
+    #dddddd 25%,
+    #858585 45%,
+    #545454 55%,
+    #242424 75%,
+    #000000 100%
+  );
+  opacity: 0.7;
+  filter: blur(85px);
+}
+
+#lamp3 {
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  right: 380px;
+  top: 600px;
+  background: radial-gradient(
+    ellipse at center,
+    #a4a4a4 0%,
+    #232323 25%,
+    #151515 45%,
+    #545454 55%,
+    #000000 75%,
+    #ffffff 100%
+  );  
+  opacity: 0.7;
+  filter: blur(85px);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* The starfield container */
